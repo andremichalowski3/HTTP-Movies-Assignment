@@ -1,75 +1,72 @@
 # HTTP Movies
 
-## Instructions
+  - [x] Initial Commit
 
-### Task 1: Project Setup 
+### Task 1: Project Setup
 
-- **Fork** this repository, then clone your fork.
-- Run `npm install` to download dependencies.
-- Run the server using `npm start`.
-- In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
-- Still inside the `client` folder run `npm start` to run the client application.
+  - **Fork** this repository, then clone your fork.
+  - [ ] npm install and start in root and client directory
 
-### Task 2a: MVP
+### Task 2: MVP
 
-#### Updating A Movie:
+  #### Task 2A: Updating A Movie:
 
-- Add a route at the path `/update-movie/:id`
-- Create a component with a form to update the chosen movie
-- Add a button in the movie component that routes you to your new route with the movies's id as the URL param
-- The form should make a PUT request to the server when submitted
-- When the call comes back successfully, reset your form state and route the user to `/movies` where they will see the updated movie in the list
-- (Editing the movie stars can be a stretch problem... don't worry about it now. Move on to the next step, and come back and solve this at the end)
+  - Add a route at the path `/update-movie/:id`
+  - Create a component with a form to update the chosen movie
+  - Add a button in the movie component that routes you to your new route with the movies's id as the URL param
+  - The form should make a PUT request to the server when submitted
+  - When the call comes back successfully, reset your form state and route the user to `/movies` where they will see the updated movie in the list
 
-Movie object format:
+    Movie object format:
 
-```
-{
-  id: 5,
-  title: 'Tombstone',
-  director: 'George P. Cosmatos',
-  metascore: 89,
-  stars: ['Kurt Russell', 'Bill Paxton', 'Sam Elliot'],
-}
-```
+    ```
+    {
+      id: 5,
+      title: 'Tombstone',
+      director: 'George P. Cosmatos',
+      metascore: 89,
+      stars: ['Kurt Russell', 'Bill Paxton', 'Sam Elliot'],
+    }
+  ```
 
-#### Deleting A Movie:
+  #### Task 2B: Deleting A Movie:
 
-- Add a delete button in the movie component that makes a DELETE request
-- When the call comes back successfully, route the user to `/movies` where they will see the updated movie list without the deleted movie
+  - Add a delete button in the movie component that makes a DELETE request
+  - When the call comes back successfully, route the user to `/movies` where they will see the updated movie list without the deleted movie
 
-#### Adding A Movie:
+  #### Task 2C: Adding A Movie:
 
-- Add a route at the path `/add-movie`
-- Create a component with a form to add a new movie
-- Each created movie should have the following format (notice the array of strings - this will test your JS skills, so work through it methodically)
-- The form should make a POST request to the server when submitted
-- When the call comes back successfully, reset your form state and route the user to `/movies`
+  - Add a route at the path `/add-movie`
+  - Create a component with a form to add a new movie
+  - Each created movie should have the following format (notice the array of strings - this will test your JS skills, so work through it methodically)
+  - The form should make a POST request to the server when submitted
+  - When the call comes back successfully, reset your form state and route the user to `/movies`
 
-Movie object format:
+  Movie object format:
 
-```
-{
-  id: 5,
-  title: 'Tombstone',
-  director: 'George P. Cosmatos',
-  metascore: 89,
-  stars: ['Kurt Russell', 'Bill Paxton', 'Sam Elliot'],
-}
-```
+  ```
+  {
+    id: 5,
+    title: 'Tombstone',
+    director: 'George P. Cosmatos',
+    metascore: 89,
+    stars: ['Kurt Russell', 'Bill Paxton', 'Sam Elliot'],
+  }
+  ```
 
-### Task 2b: Exit Ticket 
+### Task 3: Exit Ticket
 
-Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/hNvz7zyxgmYobvSwb/HzrJFpaxkxvq86).
+  Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/hNvz7zyxgmYobvSwb/HzrJFpaxkxvq86).
 
-The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
+  The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
 
-### Task 3: Stretch Problem
+### Task 4: Stretch Problem
 
-- Add the ability to update the stars of a movie within a single text input field (think about how to change from an array of strings to a single string, then back to an array of strings)
-- See Part 3 above (Adding movies with a POST request)
-- Style the app!
+  - Add the ability to update the stars of a movie within a single text input field (think about how to change from an array of strings to a single string, then back to an array of strings)
+  - See Part 3 above (Adding movies with a POST request)
+  - Style the app!
 
-## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
-* [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
+## Task 5: Review/Clean/Submit
+
+  - [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
+  - [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
