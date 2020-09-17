@@ -53,14 +53,25 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
+
 .save-button {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+
+.edit-button {
   position: absolute;
   top: 25px;
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: rgb(229, 232, 146);
 }
+
 .save-button:hover {
   background-color: green;
   color: white;

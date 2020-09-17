@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import MovieCard from "./MovieCard";
 
 function Movie({ addToSavedList }) {
   const [movie, setMovie] = useState(null);
   const params = useParams();
+  const { push } = useHistory();
 
   const fetchMovie = (id) => {
     axios
@@ -26,12 +27,30 @@ function Movie({ addToSavedList }) {
     return <div>Loading movie information...</div>;
   }
 
+  // const updateMovie = e => {
+  //   e.preventDefault();
+  //   console.log(e);
+  //   onClick={() => push(`/update-movie/${item.id}`)}
+  //   // <Link path={`/update-movie/${id}`} />
+
+  // ....? this.props.history.push(`/update-movie/${this.props.match.params.id}`)
+  // ....? <Link to={`/update-movie/${params.id}`}>
+        // <div className="edit-button">Edit</div>
+        // </Link>
+
+  // }
+
   return (
     <div className="save-wrapper">
       <MovieCard movie={movie} />
 
       <div className="save-button" onClick={saveMovie}>
         Save
+      </div>
+
+      <div className="edit-button" onClick={() => push(`/update-movie/${movie.id}`)}>
+        {/* Is this ^^^ a route or a link to the route in "push" case? */}
+        Edit
       </div>
     </div>
   );
