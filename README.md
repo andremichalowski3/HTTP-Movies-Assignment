@@ -5,7 +5,7 @@
 ### Task 1: Project Setup
 
   - **Fork** this repository, then clone your fork.
-  - [ ] npm install and start in root and client directory
+  - [x] npm install and start in root and client directory
 
 ### Task 2: MVP
 
