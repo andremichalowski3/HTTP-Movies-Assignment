@@ -86,3 +86,22 @@ body {
   color: red;
   text-align: center;
 }
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+input {
+  margin: 5px;
+}
