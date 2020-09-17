@@ -7,7 +7,8 @@ function Movie({ addToSavedList }) {
   const [movie, setMovie] = useState(null);
   const params = useParams();
   const { push } = useHistory();
-
+  const history = useHistory();
+  
   const fetchMovie = (id) => {
     axios
       .get(`http://localhost:5000/api/movies/${id}`)
@@ -40,6 +41,13 @@ function Movie({ addToSavedList }) {
 
   // }
 
+  const deleteMovie = () => {
+    axios
+      .delete(`http://localhost:5000/api/movies/${params.id}`)
+      .then((res) => history.push("/"))
+      .catch((err) => console.log(err.response));
+  };
+
   return (
     <div className="save-wrapper">
       <MovieCard movie={movie} />
@@ -52,6 +60,11 @@ function Movie({ addToSavedList }) {
         {/* Is this ^^^ a route or a link to the route in "push" case? */}
         Edit
       </div>
+
+      <div className="delete-button" onClick={deleteMovie}>
+        Delete
+      </div>
+
     </div>
   );
 }
