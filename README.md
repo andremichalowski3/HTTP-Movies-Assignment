@@ -17,7 +17,8 @@
   - 2D [x] The form should make a PUT request to the server when submitted
     - 2D.1 [x] - GET request to fetch data to dynamic ID, Update Route component
       - [x] Update Movie (Get movie w/dynamic id and pass to form where put made)
- 
+    - 2D.2 [x] - PUT request to edit movie (reset form state + push to movies) 
+      - [x] Update Form 
 
     Movie object format:
 
