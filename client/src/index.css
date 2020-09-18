@@ -53,14 +53,35 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
+
 .save-button {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+
+.edit-button {
   position: absolute;
   top: 25px;
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: rgb(229, 232, 146);
 }
+
+.delete-button {
+  position: absolute;
+  top: 80px;
+  right: 25px;
+  /* bottom: 25px; */
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: rgb(255, 4, 0);
+}
+
 .save-button:hover {
   background-color: green;
   color: white;
@@ -71,7 +92,33 @@ body {
   background-color: lightskyblue;
 }
 
+.add-movie-button {
+  text-decoration: none;
+  width: 5rem;
+  padding: 5px 10px;
+  background-color: lightskyblue;
+}
+
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+input {
+  margin: 5px;
 }
